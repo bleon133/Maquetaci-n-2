@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --veryDarkBlueMain: hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.container{
+    padding: 2px;
+    height: 546px;
+    width: 330px;
+    background-color: var(--veryDarkBlueMain);
+    border-radius: 11px;
+}
+
+.container__card{
+    padding: 26px 24px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--veryDarkBlueCard);
+    border-radius: 11px;
+}
+
+.container__card__image--backgroud{
+    margin-bottom: 30px;
+    height: 276px;
+    width: 277px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.container__card__title{
+    color: var(--white);
+    font-size: 1.16em;
+}
+
+.container__card__text{
+    margin: 24px 0;
+    color: var(--softBlue);
+    font-size: 0.8em;
+}
+
+.container__card__money__time{
+    display: flex;
+    flex-direction: row;
+}
+
+.container__card__money{
+    display: flex;
+    flex-direction: row;
+}
+
+.container__card__money__image{
+    margin-right: 7px;
+    background-image: url(./images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 11px;
+}
+
+.container__card__time{
+    display: flex;
+    flex-direction: row;
+}
+
+.container__card__time__image{
+    margin-right: 9px;
+    background-image: url(./images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 14px;
+    width: 14px;
+}
+
+.container__card__money__text{
+    font-size: 0.72em;
+    color: var(--cyan);
+}
+
+.container__card__time__text{
+    font-size: 15px;
+    color: var(--softBlue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
