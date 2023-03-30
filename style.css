@@ -98,6 +98,10 @@ body{
     font-size: 1.16em;
 }
 
+.container__card__title:hover{
+    color: var(--cyan);
+}
+
 .container__card__text{
     margin: 24px 0;
     color: var(--softBlue);
@@ -182,6 +186,10 @@ hr{
 
 .container__card__profile__name{
     color: var(--white);
+}
+
+.container__card__profile__name:hover{
+    color: var(--cyan);
 }
 
 .attribution {
