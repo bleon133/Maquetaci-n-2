@@ -10,6 +10,7 @@
     --softBlue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
     --veryDarkBlueMain: hsl(217, 54%, 11%);
+    --veryDarkBlueMain2: hsl(215, 48%, 10%);
     --veryDarkBlueCard: hsl(216, 50%, 16%);
     --veryDarkBlue: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
@@ -31,13 +32,14 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    background-color: var(--veryDarkBlueMain);
 }
 
 .container{
     padding: 2px;
     height: 546px;
     width: 330px;
-    background-color: var(--veryDarkBlueMain);
+    background-color: var(--veryDarkBlueMain2);
     border-radius: 11px;
 }
 
@@ -61,6 +63,34 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.container__card__imagen--backgroundHover{
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: hsla(214, 52%, 70%, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__card__imagen--backgroundHover--eye{
+    visibility: hidden;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    height: 39px;
+    width: 46px;
+}
+
+.container__card__image--backgroud:hover .container__card__imagen--backgroundHover{
+    visibility: visible;
+}
+
+.container__card__image--backgroud:hover .container__card__imagen--backgroundHover--eye{
+    visibility: visible;
 }
 
 .container__card__title{
@@ -77,11 +107,14 @@ body{
 .container__card__money__time{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    
 }
 
 .container__card__money{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .container__card__money__image{
@@ -95,6 +128,8 @@ body{
 .container__card__time{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-left: 110px;
 }
 
 .container__card__time__image{
@@ -116,6 +151,39 @@ body{
     color: var(--softBlue);
 }
 
+hr{
+    margin-top: 16px;
+    height: 1px;
+}
+
+.container__card__profile{
+    width: 100%;
+    height: 33px;
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.container__card__profile__image{
+    border: 1px solid white;
+    background-image: url(./images/image-avatar.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+}
+
+.container__card__profile__text{
+    font-size: 1.6rem;
+    padding-left: 16px;
+    color: var(--softBlue);
+}
+
+.container__card__profile__name{
+    color: var(--white);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -123,4 +191,10 @@ body{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and(min-width: 1440px) {
+    .container {
+        margin: 154px 0;
+    }
 }
